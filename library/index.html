@@ -1,0 +1,740 @@
+<?php
+$user="root";
+$server="localhost";
+$password="";
+$dbname="";
+
+$con=mysqli_connect($server,$user,$password,$dbname);
+if(isset($_POST['register'])){
+	$fname=$_POST['firstname'];
+	$lname=$_POST['lastname'];
+	$email=$_POST['emailfield'];
+	$pwd=$_POST['passfield'];
+	$cnfpwd=$_POST['confpassfield'];
+	$mobile=$_POST['Mobilenumber'];
+
+$query="Insert into registration(name,email,password,mobile) values('".$fname."','".$email."','".$pwd."','".$mobile."')";
+$result=mysqli_query($con,$query);
+if($result){
+	echo "Success";
+}
+else 
+{
+echo "fail";
+}
+
+}
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>smartech publications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/mycss.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/fontawesome.min" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script type="text/javascript" src="myjs.js"></script>
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+<body>
+    <div class="header-top">
+        <div id="header-top-info"> <a href="#">info@smartecheducation.com</a></div>
+        <div> CONTACT: +91 888-200-4256</div>
+        <div><a href="#">ORDER STATUS</a></div>
+        <div>
+            <button onclick="showloginform()"> LOGIN/SIGN UP </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="header-logo">
+                <img src="images\photo.jpg" alt="logo">
+                <div>
+                    <div id="header-logo-smartech">
+                        <p> SMARTECH</p>
+                    </div>
+                    <div id="header-logo-publications">
+                        <p class="line"></p>
+                        <p>PUBLICATIONS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-search">
+                <select>
+                    <option>Exam</option>
+                    <option>web desigening</option>
+                    <option>Exam</option>
+                    <option>web desigening</option>
+                    <option>php</option>
+                    <option>html</option>
+                </select>
+                <input type="text" placeholder="search....." />
+            </div>
+        </div>
+        <div class="main-wrapper">
+            <div class="left-sidebar">
+                <div class="left-sidebar-categories"> Categories</div>
+                <div class="left-sidebar-categories-list" id="left-sidebar-categories-list">
+                    <ul>
+                        <li><a href="#">New Arrivals</a> </li>
+                        <li><a href="#">Best Book</a></li>
+                        <li><a href="#">General Studies And Engineering Aptitude</a></li>
+                        <li><a href="#">Gate Book</a></li>
+                        <li><a href="#">UPSC Book</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                        <li><a href="#">Book1</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+            	 <!---------------------------------------------------ABOUT US PAGE------------------------------------->
+     <div class="about-us-container" id="about-us-container">
+		<div id="about-us-heading">
+		 About Smartech Publication
+		</div>
+		<p>
+			<b>Smartech Publications</b>, one of the subsidiary of Smartech Education Private Limited situated in Saket provides all possible support to the students. The company is dedicated towards building the best possoble content which suits the requirement of the candidate. Smartech deals in various educational domains like technical, non-technical, management, academics, vocational so the the content writers team build the best study materials.Those materials are further sent to our publishing house from where the books, magazines, handouts are printed.<br><br>
+
+            The books are available at our branch cum corporate office, at online platforms like our websites, amazon etc. Lot of students, 
+            professionals, corporates, managers or even bloggers search for the best books. Our team has been consistently doing great doing the research and provide the updated content. 
+            The company launches its monthly magazine with the name -"Smartech Buzz" which covers the dimension of current affairs. The whole team works upon collecting different kinds of information regarding sports, dates, political news, internatinal cum national news and finally the graphic designer collaborates all the information into visual way. The magazine especially has been liked by enormous people.<br><br>
+
+            Its great achievement for the company and Smartechians.Smartech Publications also works for graphic designing works like 
+            making logos of company, making banners, posters, flyers, visiting cards etc. Smartech is a finally a one stop solution for all kinds of printing and publishing tasks. 
+		</p>
+		
+
+	</div>
+	<!-- -----------------------------------------END ABOUT US PAGE ------------------------------------------------------>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Book Package</a></li>
+                        <li><a href="#">Book Seller</a></li>
+                        <li><a href="#">Smartech Booklist</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li class="hidden" ><button onclick="showaboutus()">About Us</button></li>
+                        <li class="hidden"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="feature-post" id="feature-post">
+                    <img src="images/489789.jpg" alt="feature-post">
+                    
+                </div>
+                <div class="main-content-bottomslider" id="main-content-bottomslider">
+                    <div class="main-content-bottomslider-image"><img src="images\slider.jpg" alt="slider image" /></div>
+                    <div class="main-content-bottomslider-image"><img src="images\slider2.jpg" alt="slider image" /></div>
+                    <div class="main-content-bottomslider-image"><img src="images\slider3.jpg" alt="slider image" /></div>
+                </div>
+            </div>
+            <div class="right-sidebar">
+                <div class="right-sidebar-cart"> Cart</div>
+                <div class="right-sidebar-img-gallary" id="right-sidebar-img-gallary">
+                    <div class="right-sidebar-img"><img src="images\389870.jpg" alt="feature-post" /></div>
+                    <div class="right-sidebar-img"><img src="images\412619.jpg" alt="feature-post" /></div>
+                    <div class="right-sidebar-img"><img src="images\480576.jpg" alt="feature-post" /></div>
+                    <div class="right-sidebar-img"><img src="images\75157.jpg" alt="feature-post" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="field" id="field">
+            <div class="left-news-event">
+                <div class="left-news-event-title">News&Event</div>
+                <div class="left-news-event-newsdescription">sit amet, consectetur adipiscing elit. Vestibulum vitae gravida dolor. Quisque eros augue, maximus at lorem a, bibendum auctor quam. Sed eu velit viverra mi euismodAenean et elit sed ligula convallis scelerisque eu </div>
+            </div>
+            <div class="right-field">
+                <div class="right-field-left">
+                    <div class="book-navigation">Best Selling Book</div>
+                    <div class="right-navigation-book" onmouseover="showbookdetail()"  onmouseleave="hidebookdetail()">
+                        <div class="aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span id="pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="book-wrapper">
+                            <div class="book-title">
+                                Aenean nisl metus,
+                                <br>finibus in accumsan
+                            </div>
+                            <div class="book-price">
+                                <p id="book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="button">
+                                <input type="button" value="View Sample" id="button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slidebar">Slidebar </div>
+                </div>
+                <div class="right-field-left">
+                    <div class="book-navigation">Best Selling Book</div>
+                    <div class="right-navigation-book" onmouseover="showbookdetail2()" onmouseleave="hidebookdetail2()">
+                        <div class="aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span id="pop-up-detailbook2">VIEW DETAIL</span>
+                        </div>
+                        <div class="book-wrapper">
+                            <div class="book-title">
+                                Aenean nisl metus,
+                                <br>finibus in accumsan
+                            </div>
+                            <div class="book-price">
+                                <p id="book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="button">
+                                <input type="button" value="View Sample" id="button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slidebar">Slidebar </div>
+                </div>
+                <div class="right-field-left">
+                    <div class="book-navigation">Best Selling Book</div>
+                    <div class="right-navigation-book" onmouseover="showbookdetail3()"  onmouseleave="hidebookdetail3()">
+                        <div class="aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span id="pop-up-detailbook3">VIEW DETAIL</span>
+                        </div>
+                        <div class="book-wrapper">
+                            <div class="book-title">
+                                Aenean nisl metus,
+                                <br>finibus in accumsan
+                            </div>
+                            <div class="book-price">
+                                <p id="book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="button">
+                                <input type="button" value="View Sample" id="button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slidebar">Slidebar </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------- popular -book field start -------------------->
+
+        <div class="popular-books" id="popular-books">
+            <div class="popular-bookstitle">Popular Books</div>
+            <div class="popular-field">
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book"  onmouseover="showdetailbook()" onmouseout="hidedetailbook()" >
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook" id="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book" onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book" onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book" onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book" onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------ALL BOOK ---------------- -->
+
+        <div class="popular-books" id="all-popular-books">
+            <div class="popular-bookstitle">All Books</div>
+            <div class="popular-field">
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book" onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book" onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book" onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book"onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book"onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+            </div>
+            <div class="popular-field">
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book" onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book" onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book" onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book" onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+                <div class="popular-field-left">
+                    <div class="popular-book-navigation">Book Title</div>
+                    <div class="popular-navigation-book" onmouseover="showdetailbook()" onmouseout="hidedetailbook()">
+                        <div class="popular-aboutbook">
+                            <img src="images\web-design-book.jpg" alt="book" />
+                            <span class ="all_pop-up-detailbook">VIEW DETAIL</span>
+                        </div>
+                        <div class="popular-book-wrapper">
+                            <div class="popular-book-price">
+                                <p id="popular-book-price-del">MRP:
+                                    <del>$50</del>
+                                </p>
+                                <p id="popular-book-price-off">$45(10% off)</p>
+                            </div>
+                            <div class="popular-button">
+                                <input type="button" value="View Sample" id="popular-button-vsample" />
+                                <br>
+                                <br>
+                                <input type="button" value="Add To Cart" id="popular-button-atcart" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-bookno">book serial number </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ------------------------footer------------------------------------- -->
+    <div class="footer">
+        <div class="footer-left">
+            <div class="footer-left-sub"><a href="#" target="">Privacy Policy</a></div>
+            <div class="footer-left-sub"><a href="#" target="">Disclaimer</a></div>
+            <div class="footer-left-sub"><a href="#" target="">Replacement Policy</a></div>
+            <div class="footer-left-sub"><a href="#" target="">Terms & Conditions</a></div>
+            <div class="footer-left-sub"><a href="#" target="">How to Purchase</a></div>
+            <div class="footer-left-sub" onclick="showaboutus()">About Us</div>
+            <div class="footer-left-sub"> <a href="#" target="">Contact Us</a></div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-right-image"><a href="#" target=""><img src="images\facebook.jpg" alt="facebook"/></a></div>
+            <div class="footer-right-image"><a href="#" target=""><img src="images\twitter.png" alt="twitter"/></a></div>
+            <div class="footer-right-image"><a href="#" target=""><img src="images\google.jpg" alt="google"/></a></div>
+        </div>
+    </div>
+    <div class="footer-below">
+        Copyright © 2018 SMARTECH Publications. All Rights Reserved.
+    </div>
+
+
+       
+    <!-- -------------------------login form----------------------------------- -->
+
+    <form id="login-form" action="#" method="">
+        <div class="form-container">
+            <div class="logintitle">LOGIN</div>
+            <div class="form-container-wrapper">
+                <div class="email">Email</div>
+                <div class="email-input">
+                    <input type="text" placeholder="Please enter your email id" />
+                </div>
+                <div class="password">Password</div>
+                <div class="password-input">
+                    <input type="text" placeholder="Please enter your password" />
+                </div>
+                <div class="forgotpass-login-wrapper">
+                    <div class="forgot-password"><a href="#">forgot password ?</a></div>
+                    <div class="login">
+                        <input type="submit" value="login" />
+                    </div>
+                </div>
+                <hr>
+                <div class="social-media-login">
+                    <button>
+                        <div class="facebook">
+                            <div class="facebook-icon"> <i class="fa fa-facebook" aria-hidden="true"></i></div>
+                            <div>login with facebook</div>
+                        </div>
+                    </button>
+                    <button>
+                        <div class="google">
+                            <div class="google-icon"> <i class="fa fa-google-plus" aria-hidden="true"></i></div>
+                            <div>login with google</div>
+                        </div>
+                    </button>
+                </div>
+                <hr>
+                <div class="register-wrapper">
+                    <div class="register-acc" onclick="showregform()">Don't have an account ?</div>
+                    <button class="reg-button" onclick="showregform()">
+                        <div class="register"> Register</div>
+                    </button>
+                    <div>
+                    </div>
+                </div>
+    </form>
+
+    <!---------------------------------------------------------- registration form -------------------------------------------->
+    
+    <div id="reg-container" >
+        <div class="reg-title">register</div>
+        <div class="register-form-wrapper">
+            <form action="" method="POST" name="reg-form">
+                <div class="input-title">First Name</div>
+                <input class="all-input" type="text" name="firstname" placeholder="please enter your first name" />
+                <div class="input-title">Last Name</div>
+                <input class="all-input" type="text" name="lastname" placeholder="please enter your Last name" />
+                <div class="input-title">Email Id</div>
+                <input class="all-input" type="text" name="emailfield" placeholder="please enter your email id" />
+                <div class="input-title">Password</div>
+                <input class="all-input" type="Password" name="passfield" placeholder="please enter your Password" />
+                <div class="input-title">Confirm Password</div>
+                <input class="all-input" type="Password" name="confpassfield" placeholder="please re-enter Password" />
+                <div class="input-title">Mobile No.</div>
+                <input class="all-input" type="number" name="Mobilenumber" placeholder="please enter your Mobile number" />
+                <div class="registration-button">
+                    <input class="reg-input" type="submit" name="register" value="register"  />
+            </form>
+            </div>
+        </div>
+        
+</body>
+
+</html>

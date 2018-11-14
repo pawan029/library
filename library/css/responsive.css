@@ -1,0 +1,24 @@
+﻿@media screen and (max-width: 1200px)
+{
+    .header-search select
+    {
+	  margin-left: 22%;
+      }
+    .header-search input
+    {
+	  border: 1px solid #c8c8c8;
+
+    }
+    .menu ul
+    {
+    	     margin-bottom: 4px;
+    	    font-size: 20px;
+
+    }
+    .menu ul .hidden
+    {
+        display: none;
+    }
+
+
+}

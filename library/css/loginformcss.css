@@ -1,0 +1,182 @@
+﻿.body
+{
+
+}
+fieldset
+{
+border:none;
+}
+.form-container
+{
+border:2px solid #eceaea;
+margin-left:400px;
+margin-right:400px;
+margin-top: 15px;
+}
+.logintitle
+{
+text-align:center;
+font-size: 22px;
+margin-top: 40px;
+color:#8d8d8d;
+}
+.form-container-wrapper
+{
+
+
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    line-height: 20px;
+}
+.email
+{
+font-size:14px;
+}
+.email-input
+{
+border-color: rgb(216, 216, 216);
+}
+.email-input input
+{
+    padding: 6px;
+    padding-right: 292px;
+    padding-left: 3px;
+    border-radius:2px;
+}
+
+.password
+{
+margin-top:5px;
+font-size:14px;
+}
+.password-input
+{
+border-color: rgb(216, 216, 216);
+}
+.password-input input
+{
+    padding: 6px;
+    padding-right: 292px;
+    padding-left: 3px;
+    border-radius:2px;
+}
+.forgotpass-login-wrapper
+{
+display:flex;
+}
+.forgot-password
+{
+margin-top: 18px;
+color:#9B9B9B;
+}
+.forgot-password a
+{
+color:#9B9B9B;
+text-decoration:none;
+}
+.login
+{
+padding-top: 18px;
+padding-left: 253px;
+ border-radius: 4px;
+}
+.login input
+{
+    font-size: 16px;
+    padding: 8px 20px;
+   border-radius: 4px;
+    border-bottom: 2px solid #9B9B9B;
+    color: whitesmoke;
+    width: 100px;
+    background-color: #e33f43;
+}
+.social-media-login
+{
+    
+    display:flex;
+    justify-content: space-around;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.facebook
+{
+    display: flex;
+    font-size: 16px;
+    color: whitesmoke;
+    background-color: #4c66a4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 4px;
+}
+.facebook-icon
+{
+    border-right: 2px solid #e6dcdc;
+    padding-right: 7px;
+    margin-right: 4px;
+}
+.fa-facebook
+{
+
+}
+.google
+{
+    display: flex;
+    font-size: 16px;
+    color: whitesmoke;
+    background-color: #e33f43;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 4px;
+}
+button
+{
+    padding: 0px;
+    border: 0px;
+}
+.google-icon
+{
+    border-right: 2px solid #e6dcdc;
+    padding-right: 7px;
+    margin-right: 4px;
+}
+.fa-google-plus
+{
+
+}
+.register-wrapper
+{
+    display:flex;
+    margin: 18px 0px;
+    justify-content: space-between;
+}
+.register-acc a
+{
+color: #9B9B9B;
+text-decoration:none;
+}
+.register
+{
+    background-color: #788290;
+    color: whitesmoke;
+    
+    text-align: center;
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.register a
+{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+.reg-button
+{
+margin-left: 214px;
+}
